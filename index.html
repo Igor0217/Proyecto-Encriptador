@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de Texto</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+    <body> 
+        <div class="shine"></div>
+        <header class="header">
+            <div class="contLogTex">
+                <img src="./imagenes/logo - alura.png" alt="Logo Alura" class="logoAlura">               
+                <div class="textAlura">
+                    <span>a </span>
+                    <span>l </span>    
+                    <span>u </span>    
+                    <span>r </span>    
+                    <span>a </span>    
+                    <span>L </span>   
+                    <span>A </span>    
+                    <span>T </span>     
+                    <span>A </span>    
+                    <span>M </span>
+                </div>           
+            </div>
+            <div class="tituloReset">    
+                <div class="titulo">
+                    <p>Encriptador de Texto Online</p>
+                </div>
+                <div class="resetBtn">
+                    <button class="btn btn-reset">Limpiar Datos</button>
+                </div>
+            </div>    
+        </header>
+
+        <main class="contenido">
+            <div class="alert hide">
+                <span class="fas fa-exclamation-circle"></span>
+                <span class="msg">El texto no debe contener letras mayusculas!</span>
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <section class="contenido-encriptador">
+
+                <div class="modal">
+                    
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <span class="icon">
+                                <h1 class="msgModal">Ningun mensaje fue encontrado</h1>
+                                <button class="okBtn">Intentar de nuevo</button>
+                                <button class="continuar-btn">SI</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <textarea class="encriptar" placeholder="Ingrese el texto aqui"></textarea> 
+
+                <div class="texto-aviso">
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Solo se admiten letras minúsculas y sin acento.</p>
+                </div>
+            
+                <div class="contenido-encriptador-btn">
+                    <button class="btn btn-encriptar"><i class="fa-solid fa-lock"></i>Encriptar</button>
+                    <button class="btn btn-desencriptar"><i class="fa-solid fa-unlock"></i>Desencriptar</button>
+                </div>
+
+            </section>
+        
+        <section class="tarjeta">
+
+            <div class="tarjeta-contenedor">
+                <div class="popup" id="popup">
+                    <img src="/imagenes/vB.png" alt="visto bueno">
+                    <p>El texto se copio con exito!</p>
+                    <button type="button" onclick="cerrarPopup()">OK</button>
+                </div>
+            </div>
+
+            <textarea type="mensaje" class="evaluar" ></textarea>
+           
+            <div class="video-container" id="videoContainer">
+                <video id="encryptionVideo">
+                    <source src="media/video 15.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <p class="mensaje-encriptando">ENCRIPTANDO TEXTO...</p>
+            </div>
+
+            <button type="submit" class="btn btn-copiar"><i class="fa fa-copy"></i>C o p i a r</button>
+           
+        </section>
+    </main>
+    
+     <!--pie de pagina-->
+     <footer>
+        <p class="copyright">&copy; copyright 2024 - Desarrollado por AlexGarces</p>
+     </footer>
+
+     <script src="./js/encriptador.js"></script>
+
+    </body>
+</html>
